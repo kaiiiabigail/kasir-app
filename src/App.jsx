@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import OrderPage from './pages/Order'
+import OrderPage from './Pages/Order.jsx'
 
 function App() {
   return (
