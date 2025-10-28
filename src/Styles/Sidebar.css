@@ -1,0 +1,136 @@
+.sidebar {
+  width: 280px;
+  background-color: white;
+  border-right: 1px solid #e0e0e0;
+  padding: 24px;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #8B4513;
+}
+
+.sidebar-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.sidebar-icon {
+  font-size: 24px;
+  color: #8B4513;
+}
+
+.filter-section {
+  margin-bottom: 28px;
+}
+
+.filter-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: #f8f8f8;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  text-align: left;
+}
+
+.filter-option:hover {
+  background-color: #f0f0f0;
+  border-color: #8B4513;
+}
+
+.filter-option.active {
+  background-color: #FFF8F0;
+  border-color: #8B4513;
+  color: #8B4513;
+  font-weight: 600;
+}
+
+.filter-icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #8B4513 0%, #6B3410 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+}
+
+.history-toggle:hover {
+  background: linear-gradient(135deg, #6B3410 0%, #5A2D0E 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(139, 69, 19, 0.3);
+}
+
+.history-toggle.active {
+  background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.history-toggle.active:hover {
+  background: linear-gradient(135deg, #388E3C 0%, #2E7D32 100%);
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.3);
+}
+
+/* Scrollbar Styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #8B4513;
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #6B3410;
+}

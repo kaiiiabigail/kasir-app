@@ -1,0 +1,152 @@
+.order-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .order-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-table {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.order-id {
+  font-size: 13px;
+  color: #999;
+  font-weight: 500;
+}
+
+.order-status-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.order-status-badge svg {
+  font-size: 14px;
+}
+
+.order-card-body {
+  margin-bottom: 16px;
+}
+
+.order-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.order-category {
+  background-color: #F5F5F5;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+}
+
+.order-time {
+  font-size: 13px;
+  color: #999;
+}
+
+.order-items-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.order-item-preview {
+  font-size: 14px;
+  color: #555;
+  padding-left: 8px;
+  border-left: 2px solid #8B4513;
+}
+
+.order-items-more {
+  font-size: 12px;
+  color: #8B4513;
+  font-weight: 600;
+  margin-top: 4px;
+  padding-left: 8px;
+}
+
+.order-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.order-total {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.order-total-label {
+  font-size: 12px;
+  color: #999;
+  font-weight: 500;
+}
+
+.order-total-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #8B4513;
+}
+
+.view-order-btn {
+  padding: 10px 20px;
+  background-color: #8B4513;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-order-btn:hover {
+  background-color: #6B3410;
+  transform: scale(1.05);
+}   
